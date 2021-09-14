@@ -25,8 +25,8 @@ function play(){
 	document.getElementById("typeDiv").style.opacity = flag;
 	document.getElementById("imgTxt").style.opacity = 1 - flag;
 	if(t == 0){
-		//setTimeout(showImage, 1000);
-		setInterval(showImage, 2000);
+		//setTimeout(showImage, 1500);
+		setInterval(showImage, 3000);
 	}
 	t++;
 }
@@ -43,7 +43,7 @@ function preshowImage(){
 
 function buttonFadeIn(){
 	if(btnVal < 1){
-		btnVal += 0.035;
+		btnVal += 0.015;
 		btn.style.opacity = btnVal;
 	}
 	else{
@@ -58,7 +58,7 @@ function buttonFadeIn(){
 
 function event(){
 
-	showImageInterval = setInterval(preshowImage, 150);
+	showImageInterval = setInterval(preshowImage, 100);
 
 	imgInterval = setInterval(function (){
 		if(ok == 3){
