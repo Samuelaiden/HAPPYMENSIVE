@@ -8,11 +8,11 @@ function timer(){
 	var t = new Date() - start;
 	var d = Math.floor(t / 1000 / 60 / 60 / 24);
 	var h = Math.floor(t / 1000 / 60 / 60 % 24);
-	if(h < 10){
+	if(h < 0){
 		h = "0" + h;
 	}
 	var m = Math.floor(t / 1000 / 60 % 60);
-	if(m < 0){
+	if(m < 10){
 		m = "0" + m;
 	}
 	var s = Math.floor(t / 1000 % 60);
